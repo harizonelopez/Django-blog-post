@@ -40,9 +40,3 @@ def delete_post(request, pk):
         post.delete()
         messages.success(request, 'Post deleted successfully!')
         return redirect('home')  
-
-
-
-
-
-        

@@ -24,7 +24,6 @@
         data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
       <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
           <a class="nav-item nav-link" id="home" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
@@ -37,7 +36,7 @@
         </div>
       </div>
     </nav>
-
+    
     {% if messages %}
       {% for message in messages %}
           <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible fade show" role="alert">
@@ -45,12 +44,12 @@
           </div>
       {% endfor %}
     {% endif %}
-
+    
     <div class = "container">
       {% block content %}  
       {% endblock %}
     </div>
-
+    
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -68,9 +67,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous">
     </script>
-
+    
     <script>
-      // Auto-hide alerts after 3 seconds
+      // Auto-hide alerts after 2 seconds
       $(document).ready(function() {
           setTimeout(function() {
               $(".alert").alert('close');
