@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %} new post page {% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c35;
+            color: #fff;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        header {
+            background-color: #1e2229;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #373c49;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #1e2229;
+            text-align: center;
+            padding: 0em 0;
+            position: fixed;
+            bottom: 0;
+            width: 65%;
+        }
+
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header align="center">New / Edit Post</header>
+        <section>
+            <div class="container">
+                <h1>{{ form.instance.pk|yesno:"Edit Post,New Post" }}</h1>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.title.label_tag }}
+                        {{ form.title }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.content.label_tag }}
+                        {{ form.content }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z"/>
+                        <path d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z"/>
+                        </svg>  </button>
+                </form>
+            </div>
+        </section>
+
+        <p align="center"><a href="{% url 'home' %}" class="btn btn-secondary">Home</a></p>
+
+        <footer>
+            <p>&copy; 2024 Dev_aladinh production</p>
+        </footer>
+
+    </section>
+</body>
+</html>
+{% endblock %}
