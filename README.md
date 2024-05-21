@@ -1,4 +1,4 @@
-# Django-blog-post Project.
+# Django-blog post Project.
 
 This is a simple Django project for creating, editing, and deleting blog posts.
 
@@ -35,25 +35,19 @@ This is a simple Django project for creating, editing, and deleting blog posts.
     # source venv/bin/activate   # On macOS/Linux
     ```
 
-3. **Install the dependencies:**
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-4. **Set up the database:**
+3. **Set up the database:**
 
     ```sh
     python manage.py migrate
     ```
 
-5. **Run the development server:**
+4. **Run the development server:**
 
     ```sh
     python manage.py runserver
     ```
 
-6. **Open your browser and navigate to:**
+5. **Open your browser and navigate to:**
 
     ```
     http://127.0.0.1:8000/
@@ -68,18 +62,18 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 
 ### Editing a Post
 
-1. On the homepage, click the "Edit" button next to the post you want to edit.
+1. On the homepage, click the "Edit" icon below the post you want to edit.
 2. Update the post information and submit the form to save changes.
 
 ### Deleting a Post
 
-1. On the homepage, click the "Delete" button next to the post you want to delete.
+1. On the homepage, click the "Trash" icon below the post you want to delete.
 2. Confirm the deletion in the pop-up window.
 
 ### Flash Messages
 
 - Success messages are displayed for creating, editing, and deleting posts.
-- These messages disappear after a few seconds.
+- These flashed messages disappear after a few seconds.
 
 ## Contributing
 
@@ -95,5 +89,5 @@ This is a simple Django project for creating, editing, and deleting blog posts.
     ```sh
     git commit -m 'Add new feature'
     ```
-
+    
 4. **Push to the branch:
