@@ -31,7 +31,7 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 
     ```sh
     python -m venv
-    source venv/scripts/activate   # On Windows use venv/bin/activate
+    source venv/scripts/activate   # On Windows venv/bin/activate
     ```
 
 3. **Set up the database:**
