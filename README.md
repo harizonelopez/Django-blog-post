@@ -30,15 +30,15 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 2. **Create a virtual environment and activate it:**
 
     ```sh
-    python -m venv venv
-    venv\Scripts\activate   # On Windows
-    # source venv/bin/activate   # On macOS/Linux
+    python -m venv
+    source venv/scripts/activate   # On Windows use venv/bin/activate
     ```
 
 3. **Set up the database:**
 
     ```sh
     python manage.py migrate
+    python manage.py makemigrations
     ```
 
 4. **Run the development server:**
@@ -57,13 +57,13 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 
 ### Creating a New Post
 
-1. Click on the "New Post" link on the homepage.
+1. Click on the "new post" link on the homepage.
 2. Fill in the form and submit to create a new post.
 
 ### Editing a Post
 
 1. On the homepage, click the "Edit" icon below the post you want to edit.
-2. Update the post information and submit the form to save changes.
+2. Update the post information and submit the form to save the changes.
 
 ### Deleting a Post
 
@@ -72,13 +72,13 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 
 ### Flash Messages
 
-- Success messages are displayed for creating, editing, and deleting posts.
-- These flashed messages disappear after a few seconds.
+- Success messages are displayed for creating, editing, and deleting the posts.
+- The flashed messages disappear after a few seconds.
 
 ## Contributing
 
 1. **Fork the repository**
-2. **Create a new branch:**
+2. **Create a new branch**
 
     ```sh
     git checkout -b feature-branch
@@ -87,7 +87,5 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 3. **Make your changes and commit them:**
 
     ```sh
-    git commit -m 'Add new feature'
-    ```
-    
-4. **Push to the branch:
+    git commit -m 'add new feature'
+    ```    
