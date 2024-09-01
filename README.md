@@ -2,14 +2,6 @@
 
 This is a simple Django project for creating, editing, and deleting blog posts.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - Create new blog posts
@@ -31,7 +23,7 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 
     ```sh
     python -m venv
-    source venv/scripts/activate   # On Mac venv/bin/activate
+    source venv/Scripts/activate   # On Mac venv/bin/activate
     ```
 
 3. **Set up the database:**
