@@ -35,6 +35,12 @@
             border-radius: 10px;
         }
 
+        #time {
+            font-size: 24px;
+            color: #1a1c1e;
+            margin-top: 20px;
+        }
+
         footer {
             background-color: #1e2229;
             text-align: center;
@@ -66,7 +72,11 @@
     <section>
         <h1 align="center">--- Posts Homepage ---</h1>
         <section>
-            <p align="center"><a href="{% url 'new_post' %}">create new post</a></p>
+            <!--<p align="center"><a href="{% url 'new_post' %}">create new post</a></p>-->
+            <p align="center"><a href="">--- CURRENT TIME ---</a>
+            <div
+                align="center"
+                id="time"></div>
             <ul>
                 {% for post in posts %}
                 <section>
