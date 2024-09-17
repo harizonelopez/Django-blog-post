@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from myblog import views as myblog_views 
-from myblog.views import home, delete_post
+from myblog.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +28,6 @@ urlpatterns = [
     path('home/', myblog_views.home, name='home'), 
     path('new/', myblog_views.new_post, name='new_post'),
     path('edit/<int:pk>/', myblog_views.edit_post, name='edit_post'),
-    path('post/<int:pk>/delete/', myblog_views.delete_post, name='delete_post'),
+    path('post/<int:pk>/delete/', myblog_views.delete_post, name='delete_post')
 ]
 
