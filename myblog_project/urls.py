@@ -23,11 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('myblog/', include('myblog.urls')),
-
-    # user urls
+    
+    # User urls
     path('home/', myblog_views.home, name='home'), 
     path('new/', myblog_views.new_post, name='new_post'),
     path('edit/<int:pk>/', myblog_views.edit_post, name='edit_post'),
     path('post/<int:pk>/delete/', myblog_views.delete_post, name='delete_post')
 ]
-

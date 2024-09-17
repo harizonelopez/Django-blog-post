@@ -3,7 +3,6 @@ from .models import Post
 from .forms import PostForm
 from django.contrib import messages
 
-
 def home(request):
     posts = Post.objects.all()
     return render(request, 'home.html', {'posts': posts})
