@@ -42,7 +42,7 @@ This is a simple Django project for creating, editing, and deleting blog posts.
 5. **Open your browser and navigate to:**
 
     ```
-    http://127.0.0.1:8000/
+    http://127.0.0.1:8000
     ```
 
 ## Usage
