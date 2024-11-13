@@ -24,7 +24,7 @@ urlpatterns = [
     path('', home),
     path('myblog/', include('myblog.urls')),
     
-    # User urls
+    # User Urls
     path('home/', myblog_views.home, name='home'), 
     path('new/', myblog_views.new_post, name='new_post'),
     path('edit/<int:pk>/', myblog_views.edit_post, name='edit_post'),
